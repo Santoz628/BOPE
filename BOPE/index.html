@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BOPE - Cidade Moderna</title>
+
+    
+  
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    /* Animação fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Animação dourada no título */
+    @keyframes goldGlow {
+      0% { text-shadow: 0 0 5px #ffd700; }
+      50% { text-shadow: 0 0 20px #ffd700, 0 0 10px #ffaa00; }
+      100% { text-shadow: 0 0 5px #ffd700; }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+      background-color: #1a1a1a;
+      width: 100%;
+      border-bottom: 3px solid #FFD700;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    header img {
+      height: 80px;
+      margin-right: 20px;
+      filter: drop-shadow(0 0 5px #FFD700);
+      border-radius: 80%
+    }
+
+    header h1 {
+      font-size: 34px;
+      color: #FFD700;
+      animation: goldGlow 2s infinite;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="./img/OIP (1).png" alt="Caveira BOPE">
+    <h1>BOPE - CIDADE MODERNA</h1>
+  </header>
+
+<section style="padding: 50px 30px; max-width: 1100px; margin: auto; color: white; font-family: 'Segoe UI', sans-serif;">
+  <h1 style="font-size: 38px; color: yellow; text-align: center; margin-bottom: 30px;">
+    Sobre o BOPE - Batalhão de Operações Policiais Especiais
+  </h1>
+
+  <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+    O <strong>BOPE</strong> (Batalhão de Operações Policiais Especiais) é a unidade de elite da Polícia Militar, especializada em ações táticas de alto risco, combate ao crime organizado e operações urbanas e rurais. Criado oficialmente em <strong>19 de janeiro de 1978</strong>, o BOPE surgiu com o objetivo de responder a situações que exigem preparo técnico elevado, disciplina absoluta e coragem extrema — especialmente em áreas onde o policiamento convencional não consegue operar com eficácia.
+  </p>
+
+  <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+    No servidor <strong>Cidade Moderna</strong>, a BOPE atua como a força máxima da segurança pública. Nossa missão vai além de patrulhar ruas: somos responsáveis por retomadas de áreas dominadas, missões de resgate, escoltas táticas, controle de distúrbios civis e apoio a outras forças, como a ROCAM e o GAM. Somos o último recurso, quando tudo mais falha — e quando falhar não é uma opção.
+  </p>
+
+  <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+    A filosofia do BOPE se baseia em <strong>honra, disciplina e força</strong>. Cada operador é treinado para atuar com precisão cirúrgica, tanto em ambiente urbano quanto em selva, mata fechada, áreas montanhosas e em operações noturnas. Carregamos no peito a caveira — símbolo da coragem diante da morte — e jamais recuamos diante do perigo. Em nossa doutrina, missão dada é missão cumprida.
+  </p>
+
+  <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+    Somos uma irmandade. Cada policial do BOPE representa o topo da cadeia de treinamento da Polícia Militar. Nossos membros passam por provas físicas, psicológicas e morais — não basta ser forte, é preciso ser leal, disciplinado e comprometido com a vida do parceiro e com a missão. A seleção é rígida e a permanência é ainda mais exigente.
+  </p>
+
+  <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+    Atualmente, o BOPE da Cidade Moderna é composto por diversas divisões operacionais, incluindo:
+  </p>
+
+  <ul style="font-size: 18px; line-height: 1.8; margin-left: 30px;">
+    <li><strong>ROCAM</strong> – Motopatrulhamento tático urbano rápido e ágil.</li>
+    <li><strong>GAM</strong> – Grupo de Apoio Motorizado com atuação em larga escala.</li>
+
+    <footer style="margin-top: 80px; padding: 20px 0; background-color: #111; text-align: center; border-top: 2px solid yellow;">
+  <p style="color: #888; font-size: 14px; font-family: 'Segoe UI', sans-serif;">
+    &copy; 2025 BOPE - Cidade Moderna. Todos os direitos reservados. Desenvolvido por @✱Comando✱.
+  </p>
+</footer>
+
+
+
+   <!-- PLAYER ESTILIZADO COM SVG E NEON -->
+<div id="music-player" style="position: fixed; top: 20px; right: 20px; z-index: 1000; display: flex; align-items: center; gap: 10px;">
+  <!-- Botão SVG Neon -->
+  <button id="toggle-play" style="background: none; border: none; cursor: pointer;">
+    <svg id="speaker-icon" width="32" height="32" viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg"
+      style="filter: drop-shadow(0 0 5px yellow); animation: pulse 2s infinite;">
+      <path d="M5 9v6h4l5 5V4l-5 5H5z"/>
+    </svg>
+  </button>
+  
+  <!-- Slider de volume -->
+  <input id="volume" type="range" min="0" max="1" step="0.01" value="0.5"
+    style="accent-color: yellow; background: black; border: 1px solid yellow; border-radius: 5px; height: 5px;">
+  
+  <audio id="background-music" src="./audio/musica.mp3" loop></audio>
+</div>
+
+<!-- Efeito Neon -->
+<style>
+  @keyframes pulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 5px yellow);
+    }
+    50% {
+      filter: drop-shadow(0 0 20px yellow);
+    }
+  }
+</style>
+
+
+</div>
+
+<section id="categorias" style="padding: 40px; color: white; background-color: #000;">
+  <h2 style="text-align: center; color: yellow;">⚡ Divisões e Informações</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
+
+    <!-- Card ROCAM -->
+    <a href="rocam.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #111; border: 2px solid yellow; width: 250px; border-radius: 15px; overflow: hidden; transition: 0.3s; cursor: pointer;">
+        <img src="./img/MMSA_MATERIA_1_HEADER-1.jpg" alt="ROCAM BOPE" style="width: 100%; height: 150px; object-fit: cover;">
+        <div style="padding: 15px; text-align: center;">
+          <h3 style="color: yellow;">ROCAM</h3>
+          <p style="color: #ccc;">Motopatrulhamento tático urbano</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card GAM -->
+    <a href="gam.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #111; border: 2px solid yellow; width: 250px; border-radius: 15px; overflow: hidden; transition: 0.3s; cursor: pointer;">
+        <img src="./img/Figura-5-Militar-do-GRUMEC-e-Atirador-do-EB-a-bordo-da-aeronave-Aguia-87-UH-12-do-EsdHU-1-da-MB-1024x682.jpg" alt="GAM BOPE" style="width: 100%; height: 150px; object-fit: cover;">
+        <div style="padding: 15px; text-align: center;">
+          <h3 style="color: yellow;">GAM</h3>
+          <p style="color: #ccc;">Grupo de Apoio Motorizado</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card Editais -->
+    <a href="edital.html" target="_blank" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #111; border: 2px solid yellow; width: 250px; border-radius: 15px; overflow: hidden; transition: 0.3s; cursor: pointer;">
+        <img src="./img/9374094.png" alt="Editais BOPE" style="width: 100%; height: 150px; object-fit: cover;">
+        <div style="padding: 15px; text-align: center;">
+          <h3 style="color: yellow;">Editais</h3>
+          <p style="color: #ccc;">Recrutamento, promoções e mais</p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+
+
+
+<script>
+  const music = document.getElementById('background-music');
+  const playBtn = document.getElementById('toggle-play');
+  const speakerIcon = document.getElementById('speaker-icon');
+  const volumeSlider = document.getElementById('volume');
+
+  playBtn.addEventListener('click', () => {
+    if (music.paused) {
+      music.play();
+      // troca o ícone para "pause"
+      speakerIcon.innerHTML = '<path d="M6 4h4v16H6zm8 0h4v16h-4z"/>';
+    } else {
+      music.pause();
+      // volta pro ícone de alto-falante
+      speakerIcon.innerHTML = '<path d="M5 9v6h4l5 5V4l-5 5H5z"/>';
+    }
+  });
+
+  volumeSlider.addEventListener('input', () => {
+    music.volume = volumeSlider.value;
+  });
+</script>
+
+
+</body>
+</html>
