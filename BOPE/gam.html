@@ -1,131 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>GAM - Grupo de Apoio Motorizado</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servidor de Treino - BOPE</title>
   <style>
     body {
       margin: 0;
-      background-color: #111;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
     }
 
-    a.voltar {
-      position: absolute;
+    .back-button {
+      position: fixed;
       top: 20px;
       left: 20px;
-      text-decoration: none;
-      background-color: yellow;
-      color: black;
-      padding: 10px 15px;
+      background-color: #ffff00;
+      color: #000000;
       font-weight: bold;
-      border-radius: 8px;
-      box-shadow: 0 0 10px yellow;
+      padding: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ffff00;
+      text-decoration: none;
       transition: 0.3s;
     }
 
-    a.voltar:hover {
-      opacity: 0.8;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 100px auto 60px;
-      padding: 20px;
+    .back-button:hover {
+      background-color: #e6e600;
     }
 
     h1 {
-      color: yellow;
-      font-size: 32px;
+      font-size: 2em;
+      margin-bottom: 20px;
       text-align: center;
-      margin-bottom: 20px;
+      color: #ffff00;
     }
 
-    .imagem-centro {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
+    .ip-box {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      border: 2px solid #ffff00;
+      box-shadow: 0 0 15px #ffff00;
+      text-align: center;
+      max-width: 500px;
     }
 
-    .imagem-centro img {
-      max-width: 100%;
-      border: 3px solid yellow;
-      border-radius: 12px;
-      box-shadow: 0 0 20px yellow;
+    .ip-box p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .botao-edital {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 15px 30px;
-      font-size: 18px;
-      background: linear-gradient(90deg, #ffc800, #e6b800);
-      color: black;
+    .ip-address {
+      font-size: 1.8em;
       font-weight: bold;
-      text-decoration: none;
+      color: #00ffcc;
+      background-color: #000;
+      padding: 10px 20px;
       border-radius: 10px;
-      box-shadow: 0 0 20px yellow;
-      transition: all 0.3s ease;
+      display: inline-block;
     }
 
-    .botao-edital:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 30px #ffcc00aa;
-      opacity: 0.9;
-    }
+    @media (max-width: 600px) {
+      .ip-box {
+        padding: 20px;
+      }
 
-    footer {
-      margin-top: 80px;
-      padding: 20px 0;
-      background-color: #111;
-      text-align: center;
-      border-top: 2px solid yellow;
-    }
-
-    footer p {
-      color: #888;
-      font-size: 14px;
+      .ip-address {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
 <body>
+  <a href="index.html" class="back-button">Voltar ao site</a>
 
-  <a href="index.html" class="voltar">Voltar ao site</a>
+  <h1>🔫 Servidor de Treino - BOPE</h1>
 
-  <div class="container">
-    <h1>🚁 GAM - Grupo de Apoio Motorizado</h1>
-
-    <div class="imagem-centro">
-      <img src="./img/30.03.Rio.favela.Mare.armee.helicoptere.Reuters.930.620_reference.jpg" alt="Imagem do GAM">
-    </div>
-
-    <p>O <strong>GAM</strong> (Grupo de Apoio Motorizado) é uma divisão de elite da <strong>BOPE - Cidade Moderna</strong>, responsável por prover suporte operacional em missões táticas que exigem mobilidade, resposta rápida e força estratégica. Os operadores do GAM atuam com viaturas potentes e tecnologia embarcada, garantindo controle e eficiência nas ruas e nas ações de alto risco.</p>
-
-    <p>Com foco em missões de intervenção urbana, contenção de tumultos, escoltas de alto risco e apoio às outras divisões como a ROCAM, o GAM atua onde a logística e a potência das viaturas são essenciais para o sucesso da operação. As equipes são altamente treinadas em direção defensiva e ofensiva, abordagem tática embarcada, extração de alvos e combate em movimento.</p>
-
-    <p>Dentro do servidor <strong>Cidade Moderna</strong>, a presença do GAM é um símbolo de autoridade e poder dissuasivo. Suas viaturas são preparadas para entrar e sair de zonas críticas rapidamente, com capacidade para transportar operadores fortemente equipados e realizar cobertura total da área em questão.</p>
-
-    <p>O ingresso no GAM exige preparo físico, técnico e psicológico, além de histórico exemplar no BOPE. Os treinamentos incluem navegação urbana, estratégias de escolta, controle de perímetro e combate embarcado. Tudo com foco em preservar a vida, proteger a equipe e cumprir a missão.</p>
-
-    <p style="font-size: 20px; font-weight: bold; color: yellow; text-align: center; margin-top: 40px;">
-      GAM - Potência, velocidade e disciplina a serviço da missão.
-    </p>
-
-    <div style="text-align: center;">
-      <a href="https://forms.gle/wtisxJU2uaXYZsCBA" class="botao-edital">Quero entrar pra GAM</a>
-    </div>
+  <div class="ip-box">
+    <p>Conecte-se ao nosso servidor de treino com o IP abaixo:</p>
+    <div class="ip-address">192.168.0.100:22003</div>
+    <p style="margin-top: 15px; font-size: 0.9em; color: #ccc;">(Copie e cole no MTA)</p>
   </div>
-
-  <footer>
-    <p>&copy; 2025 BOPE - Cidade Moderna. Todos os direitos reservados. Desenvolvido por @✱Comando✱.</p>
-  </footer>
-
 </body>
 </html>
